@@ -1,16 +1,14 @@
-# portfolio_5570030
+# Portfolio App – Elisabeth Bezverkha
 
-A new Flutter project.
+## 📱 Projektbeschreibung
+Dies ist die Portfolio-App im Rahmen des Praktikums.
 
-## Getting Started
+## 💻 Verwendete Flutter-Version
+Flutter  3.29.2   
 
-This project is a starting point for a Flutter application.
+## 🚀 Projekt starten
+flutter pub get  
+flutter run
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🌿 Git-Branching-Strategie
+Feature-Branches wie `feature/startseite` werden erstellt, entwickelt und anschließend in `main` gemerged.
