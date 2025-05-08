@@ -12,3 +12,6 @@ flutter run
 
 ## 🌿 Git-Branching-Strategie
 Feature-Branches wie `feature/startseite` werden erstellt, entwickelt und anschließend in `main` gemerged.
+
+Name: Elisabeth Bezverkha
+Email: elisabeth.bezverkha@mnd.thm.de
