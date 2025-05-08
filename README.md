@@ -1,5 +1,5 @@
 # Portfolio App – Elisabeth Bezverkha
-
+Email: elisabeth.bezverkha@mnd.thm.de
 ## 📱 Projektbeschreibung
 Dies ist die Portfolio-App im Rahmen des Praktikums.
 
@@ -13,5 +13,4 @@ flutter run
 ## 🌿 Git-Branching-Strategie
 Feature-Branches wie `feature/startseite` werden erstellt, entwickelt und anschließend in `main` gemerged.
 
-Name: Elisabeth Bezverkha
-Email: elisabeth.bezverkha@mnd.thm.de
+
