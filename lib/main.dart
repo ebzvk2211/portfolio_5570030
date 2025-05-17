@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
-import 'pages/home_page.dart';
+import 'pages/slider_page.dart'; // ←  Import meiner neuen Seite
+import 'pages/profile_form_page.dart';
+import 'pages/settings_page.dart';
+import 'pages/profile_form_page.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const HomePage(),
+      home: const ProfileFormPage(), // ← Start mit der Slider-Seite nicht mit der Homepage
     );
   }
 }
