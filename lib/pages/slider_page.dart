@@ -14,8 +14,8 @@ class _SliderPageState extends State<SliderPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Slider-Seite'),
-        backgroundColor: Color(0xFFB3E5FC), // Babyblau
+        title: const Text('Alter'),
+        backgroundColor: Color(0xFFFFE0B2), // Orange
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -35,14 +35,14 @@ class _SliderPageState extends State<SliderPage> {
               },
             ),
             Text(
-              'Wert: ${_sliderValue.round()}',
+              'Jahre: ${_sliderValue.round()}',
               style: const TextStyle(fontSize: 20),
             ),
             const SizedBox(height: 20),
             Container(
               height: _sliderValue, // Höhe passt sich dem Sliderwert an
               width: 100,
-              color: Colors.blueAccent,
+              color: Color(0xFFFFE0B2),
             ),
           ],
         ),

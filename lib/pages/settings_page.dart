@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../main.dart'; // Für Zugriff auf MyApp.toggleDarkMode()
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -18,11 +19,12 @@ class _SettingsPageState extends State<SettingsPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Einstellungen'),
-        backgroundColor: Color(0xFFB3E5FC),
+        backgroundColor: const Color(0xFFB3E5FC),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CheckboxListTile(
               title: const Text('Newsletter abonnieren'),
@@ -48,6 +50,7 @@ class _SettingsPageState extends State<SettingsPage> {
               onChanged: (value) {
                 setState(() {
                   darkMode = value;
+                  MyApp.toggleDarkMode(value); // Globales Umschalten
                 });
               },
             ),
@@ -60,18 +63,19 @@ class _SettingsPageState extends State<SettingsPage> {
                 });
               },
             ),
-            const Divider(height: 40),
+            const Divider(height: 32),
             Text(
               'Aktuelle Auswahl:',
               style: Theme.of(context).textTheme.titleMedium,
             ),
+            const SizedBox(height: 8),
             Text(
               'Newsletter: ${newsletter ? "Ja" : "Nein"}\n'
               'Benachrichtigungen: ${updates ? "Ja" : "Nein"}\n'
               'Dunkler Modus: ${darkMode ? "An" : "Aus"}\n'
               'Offline-Modus: ${offlineMode ? "An" : "Aus"}',
               style: const TextStyle(fontSize: 16),
-            )
+            ),
           ],
         ),
       ),

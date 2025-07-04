@@ -18,8 +18,8 @@ class _ProfileFormPageState extends State<ProfileFormPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Profil bearbeiten'),
-        backgroundColor: Color(0xFFB3E5FC),
+        title: const Text('Kontakt Anfrage'),
+        backgroundColor: Color(0xFFFFE0B2),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -44,7 +44,7 @@ class _ProfileFormPageState extends State<ProfileFormPage> {
                 onSaved: (value) => email = value ?? '',
               ),
               TextFormField(
-                decoration: const InputDecoration(labelText: 'Über mich'),
+                decoration: const InputDecoration(labelText: 'Nachricht'),
                 maxLines: 3,
                 onSaved: (value) => about = value ?? '',
               ),
