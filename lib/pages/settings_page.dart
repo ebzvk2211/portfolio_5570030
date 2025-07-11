@@ -19,7 +19,7 @@ class _SettingsPageState extends State<SettingsPage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Einstellungen'),
-        backgroundColor: const Color(0xFFB3E5FC),
+        backgroundColor: const Color(0xFFDDD1CB),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -50,7 +50,7 @@ class _SettingsPageState extends State<SettingsPage> {
               onChanged: (value) {
                 setState(() {
                   darkMode = value;
-                  MyApp.toggleDarkMode(value); // Globales Umschalten
+                  
                 });
               },
             ),

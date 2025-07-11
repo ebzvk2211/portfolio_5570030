@@ -41,7 +41,7 @@ class _ContactPageState extends State<ContactPage> {
         backgroundColor: theme.colorScheme.primaryContainer,
         foregroundColor: theme.colorScheme.onPrimaryContainer,
       ),
-      drawer: const AppDrawer(),
+      drawer: AppDrawer(), // ✅ const entfernt
       body: Padding(
         padding: const EdgeInsets.all(24.0),
         child: Form(

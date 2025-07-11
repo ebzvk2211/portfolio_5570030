@@ -1,3 +1,13 @@
+import 'package:flutter/material.dart';
+
+import 'slider_page.dart';
+import 'profile_form_page.dart';
+import 'settings_page.dart';
+import 'summary_page.dart';
+import 'contact_page.dart';
+import 'home_page.dart';
+import 'work_page.dart';
+
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
 

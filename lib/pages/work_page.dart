@@ -17,7 +17,7 @@ class WorkPage extends StatelessWidget {
         backgroundColor: theme.colorScheme.primaryContainer,
         foregroundColor: theme.colorScheme.onPrimaryContainer,
       ),
-      drawer: const AppDrawer(), // Navigation
+      drawer: AppDrawer(), // ✅ const entfernt
       body: ListView(
         padding: const EdgeInsets.all(24),
         children: [

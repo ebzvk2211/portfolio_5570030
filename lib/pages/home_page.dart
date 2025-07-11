@@ -3,6 +3,7 @@ import 'slider_page.dart';
 import 'profile_form_page.dart';
 import 'settings_page.dart';
 import 'summary_page.dart';
+import 'app_drawer.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -32,7 +33,7 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
-      drawer: const AppDrawer(), // 🟠 Navigation hinzugefügt
+      drawer: AppDrawer(), // ✅ const entfernt
       body: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(
